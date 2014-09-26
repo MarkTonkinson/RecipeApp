@@ -3,42 +3,57 @@
     <head>
         <Title>Recipe Monkey Beta</Title>
         <link rel="stylesheet" href="CSS/styles.css">
+        <link href='http://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
     </head>
     <script src="RMbetajs/rmbeta.js"></script>
 <body>
     <header>
-        <h2>Recipe Monkey<h2>
+        <h1>Recipe Monkey<h1>
         <h5>Make Connections. Organize. Eat more variety with less.<h5>
     </header>
     <div class="recipebox">
         <div class="views"> 
-            <button>Search</button>
-            <button>Home</button>
-            <button>Favorites</button>
-            <button>About</button>
+            <button class="b1">Search</button>
+            <button class="b2">Home</button>
+            <button class="b3">Favorites</button>
+            <button class="b4">About</button>
+            <input class="searchRecipes" placeholder='Search "tomato paste", "cabbage", or "leftover rice"'>
         </div>
+
+
     <div class="recipeviewer">
+
+
         <aside>
-            Search:<input placeholder="Find Recipe Here">
-             <div class="addrecipe">
-                <div class = "numOfIng"> Quantity
-                    <input id="ingredient-one-quantity"></input>
-                    <input></input>
-                    <input></input>
-                    <input></input>
-                    <input></input>
+                       
+            <div>
+                <div class="addrecipe">Add A New Recipe</div>
+                <form>
+                
+                    <!--The way the input is aligned causes the tab to go down quantity before going over to ingredient -->
+                <div class="add-recipe-header">
+               
+                <select>
+                    <option>Personal</option>
+                    <option>Blog</option>
+                </select>
+                   
+                    <p>Quantity Ingredient</p>
                 </div>
-                <div class = "ingredientName">Ingredient
-                    <input id="ingredient-one-name"></input>
-                    <input></input>
-                    <input></input>
-                    <input></input>
-                    <input></input>
+
+                <input placeholder="#" class="numOfIng"></input>
+                <input placeholder='ingredient' class="ingredientName"></input>
+                <input class="numOfIng"></input>
+                <input class="ingredientName"></input>
+                <input class="numOfIng"></input>
+                <input class="ingredientName"></input>
+                <input class="numOfIng"></input>
+                <input class="ingredientName"></input>           
+           
+                 <div class ="submitButtons">Add Recipe
+                    <button>Submit</button>
                 </div>
-            
-            <div class ="submitButtons">Add Recipe
-                <button id="ingredient-one-submit">Submit</button>
-            </div>
+                </form>
             </div>    
         </aside>
         <div class="viewer">
