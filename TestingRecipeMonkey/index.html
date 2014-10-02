@@ -1,22 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="recipeMonkey">
     <head>
         <Title>Recipe Monkey Beta</Title>
         <link rel="stylesheet" href="CSS/styles.css">
         <link href='http://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
     </head>
-    <script src="RMbetajs/rmbeta.js"></script>
-<body>
+    
+<body ng-controller="rmbetactrl">
+    {{test}}
+
+   
+
     <header>
         <h1>Recipe Monkey<h1>
         <h5>Make Connections. Organize. Eat more variety with less.<h5>
     </header>
     <div class="recipebox">
         <div class="views"> 
-            <button class="b1">Search</button>
-            <button class="b2">Home</button>
-            <button class="b3">Favorites</button>
-            <button class="b4">About</button>
+            <a href="#/testTemplate"><button class="b1">Search</button></a>  <!-- link to the state-->
+            <a href="#/"><button class="b2">Home</button></a>
+            <a href="#/Favorites"><button class="b3">Favorites</button></a>
+            <a href="#/About"><button class="b4">About</button></a>
             <input class="searchRecipes" placeholder='Search "tomato paste", "cabbage", or "leftover rice"'>
         </div>
 
@@ -57,8 +61,8 @@
             </div>    
         </aside>
         <div class="viewer">
-            <p>Here is where results/other webpages appear</p>
-            <img src="rmbetapics/PioneerWoman.png">
+             <div ng-view></div>
+         
         </div>
     </div>     
     </div>
@@ -71,5 +75,11 @@
        
     </main>
 -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular-route.min.js"></script>
+<script src="RMBetajs/apprmbeta.js"></script>
+<script src="RMbetajs/rmbetactrl.js"></script>
+<script src="RMbetajs/rmbetaservice.js"></script>
+
 </body>
 </html>
