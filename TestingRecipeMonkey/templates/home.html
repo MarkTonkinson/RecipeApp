@@ -1,3 +1,14 @@
 <h1>
-    Hi Ean
+    Recipes
 </h1>
+
+<div ng-repeat="recipe in recipes">
+
+	<h3>{{recipe.recipeName}}</h3>
+		<p>Author: {{recipe.recipeAuthor}}</p>
+		<p>Where you can find it: {{recipe.recipeLocation}}</p>
+		<ul ng-repeat='value in recipe.recipeIngredients'>
+			<li>{{value}}</li>
+		</ul>
+		<p>
+</div>

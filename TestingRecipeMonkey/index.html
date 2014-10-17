@@ -7,9 +7,9 @@
     </head>
     
 <body ng-controller="rmbetactrl">
-    {{test}}
+   <p> {{test}}</p>
 
-   
+  <p> {{newRecipe}}</p>
 
     <header>
         <h1>Recipe Monkey<h1>
@@ -44,15 +44,15 @@
                    
                     <p>Quantity Ingredient</p>
                 </div>
-
+                <form>
                 <input placeholder="#" class="numOfIng"></input>
-                <input placeholder='ingredient' class="ingredientName"></input>
+                <input placeholder='ingredient' class="ingredientName" ng-model='newRecipe.ingredient1'></input>
                 <input class="numOfIng"></input>
-                <input class="ingredientName"></input>
+                <input class="ingredientName" ng-model='newRecipe.ingredient2'></input>
+                <input class="numOfIng" ></input>
+                <input class="ingredientName" ng-model='newRecipe.ingredient3'></input>
                 <input class="numOfIng"></input>
-                <input class="ingredientName"></input>
-                <input class="numOfIng"></input>
-                <input class="ingredientName"></input>           
+                <input class="ingredientName" ng-model='newRecipe.ingredient4'></input>           
            
                  <div class ="submitButtons">Add Recipe
                     <button>Submit</button>
